@@ -8,5 +8,10 @@ describe(Definition) do
       expect(test_definition.definition).to(eq("running water"))
     end
   end
+  describe(".all") do
+    it('it is empty at first') do
+      expect(Definition.all()).to(eq([]))
+    end
+  end
 
 end
