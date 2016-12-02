@@ -14,7 +14,9 @@
 
 ## Setup/Installation Requirements
 
-_Works in any web browser. To run Dictionary Application, in command line run:_
+_Works in any web browser. Published on [Heroku] (https://tranquil-reaches-72487.herokuapp.com/)_
+
+_To run Dictionary Application, in command line run:_
 
 ```
 $ git clone https://github.com/weitzwoman/dictionary_ruby
