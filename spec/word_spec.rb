@@ -19,6 +19,14 @@ describe(Word) do
       expect(Word.all()).to(eq([]))
     end
   end
+  describe("#save") do
+    it('adds a word to the array of saved words') do
+      test_word = Word.new({:word => "landscape", :definition => []})
+      test_word.save()
+      expect(Word.all()).to(eq([test_word]))
+    end
+  end
+
 
   # it('tests for the id method to attach id number to each word') do
   #   test_word = Word.new({:word => "nature", :definition => []})

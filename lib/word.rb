@@ -8,9 +8,9 @@ class Word
     # @id = @@all.length +1
   end
 
-  # define_method(:save) do
-  #
-  # end
+  define_method(:save) do
+    @@all.push(self)  
+  end
 
   # define_singleton_method(:clear) do
   #
