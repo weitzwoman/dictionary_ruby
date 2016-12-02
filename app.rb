@@ -19,3 +19,8 @@ post('/new_word') do
   @words = Word.all()
   erb(:success)
 end
+
+get('/word_list') do
+  @words = Word.all()
+  erb(:word_list)
+end
