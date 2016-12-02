@@ -39,5 +39,14 @@ describe('takes user to target route', {:type => :feature}) do
     click_link("Add a definition")
     expect(page).to have_content("New Definition")
   end
+  it('clicks add definition button to view definition entry form') do
+    fill_in("word", :with => "lake")
+    click_button("Submit New Word")
+    click_link("View Word List")
+    click_link("lake")
+    click_link("Add a definition")
+    click_button("Submit New Definition")
+    expect(page).to have_content("")
+  end
 
 end
