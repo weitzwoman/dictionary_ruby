@@ -1,6 +1,6 @@
 class Word
   attr_reader(:word, :definition, :id)
-  # @@all = []
+  @@all = []
 
   define_method(:initialize) do |attributes|
     @word = attributes.fetch(:word)
@@ -16,9 +16,9 @@ class Word
   #
   # end
 
-  # define_singleton_method(:all) do
-  #
-  # end
+  define_singleton_method(:all) do
+    @@all
+  end
 
   # define_method(:add_definition) do |definition|
   #   @definitions.push(definition)
