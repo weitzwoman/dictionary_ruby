@@ -13,5 +13,10 @@ describe('takes user to target route', {:type => :feature}) do
   it('clicks link and takes user to form page') do
     expect(page).to have_content('New Word')
   end
+  it('clicks submit and takes user to new Word success page') do
+    fill_in("word", :with => "peak")
+    click_button("Submit New Word")
+    expect(page).to have_content('Success!  You added a new Word')
+  end
 
 end
