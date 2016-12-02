@@ -5,7 +5,7 @@ class Word
   define_method(:initialize) do |attributes|
     @word = attributes.fetch(:word)
     @definition = []
-    # @id = @@all.length +1
+    @id = @@all.length + 1
   end
 
   define_method(:save) do
@@ -24,13 +24,13 @@ class Word
   #   @definitions.push(definition)
   # end
   #
-  # define_singleton_method(:find) do |identification|
-  #   found_word = nil
-  #   @@all.each do |contact|
-  #     if word.id() == identification.to_i
-  #       found_word = word
-  #     end
-  #   end
-  #   found_word
-  # end
+  define_singleton_method(:find) do |identification|
+    found_word = nil
+    @@all.each do |word|
+      if word.id() == identification.to_i
+        found_word = word
+      end
+    end
+    found_word
+  end
 end

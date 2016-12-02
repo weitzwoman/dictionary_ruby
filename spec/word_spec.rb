@@ -40,8 +40,14 @@ describe(Word) do
     end
   end
 
-  # it('tests for the id method to attach id number to each word') do
-  #   test_word = Word.new({:word => "nature", :definition => []})
-  #   expect(test_word.id()).to(eq([1]))
-  # end
+  describe(".find") do
+    it('returns a word by its id number') do
+      test_word = Word.new({:word => "river", :definition => []})
+      test_word.save()
+      test_word2 = Word.new({:word => "granite", :definition => []})
+      test_word2.save()
+      expect(Word.find(test_word.id())).to(eq(test_word))
+    end
+  end
+
 end
