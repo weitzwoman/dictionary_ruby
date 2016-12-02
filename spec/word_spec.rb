@@ -8,7 +8,7 @@ describe(Word) do
   end
 
   describe("#initialize") do
-    it('tests for the word method and return word') do
+    it('tests for the word method and returns word') do
       test_word = Word.new({:word => "sequioa", :definition => []})
       expect(test_word.word).to(eq("sequioa"))
     end
@@ -49,5 +49,9 @@ describe(Word) do
       expect(Word.find(test_word.id())).to(eq(test_word))
     end
   end
+
+  # describe("#add_definition") do
+  #   it('returns ')
+  # end
 
 end
