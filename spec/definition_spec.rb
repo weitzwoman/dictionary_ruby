@@ -13,5 +13,12 @@ describe(Definition) do
       expect(Definition.all()).to(eq([]))
     end
   end
+  describe("#save") do
+    it('adds a definition') do
+      test_definition = Definition.new({:definition => "large natural elevation rising arruptly"})
+      test_definition.save()
+      expect(Definition.all()).to(eq([test_definition]))
+    end
+  end
 
 end
