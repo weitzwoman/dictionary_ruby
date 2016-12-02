@@ -12,10 +12,6 @@ describe(Word) do
       test_word = Word.new({:word => "sequioa"})
       expect(test_word.word).to(eq("sequioa"))
     end
-    # it('tests for the definition method; initially empty') do
-    #   test_word = Word.new({:word => "mountain", :definition => []})
-    #   expect(test_word.definition).to(eq([]))
-    # end
   end
 
   describe(".all") do
