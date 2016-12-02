@@ -8,3 +8,7 @@ require('pry')
 get('/') do
   erb(:index)
 end
+
+get('/word_form') do
+  erb(:word_form)
+end
