@@ -12,10 +12,6 @@
 #### 2. Adds Definition as Class object
 * _Definition_
 
-## Known Bugs
-
-_Definitions currently do not appear on the individual word page_
-
 ## Setup/Installation Requirements
 
 _Works in any web browser. To run Dictionary Application, in command line run:_
