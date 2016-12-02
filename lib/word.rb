@@ -9,12 +9,12 @@ class Word
   end
 
   define_method(:save) do
-    @@all.push(self)  
+    @@all.push(self)
   end
 
-  # define_singleton_method(:clear) do
-  #
-  # end
+  define_singleton_method(:clear) do
+    @@all = []
+  end
 
   define_singleton_method(:all) do
     @@all
