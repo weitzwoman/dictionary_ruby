@@ -32,6 +32,5 @@ describe('takes user to target route', {:type => :feature}) do
     click_link("hike")
     expect(page).to have_content("Word definitions for hike")
   end
-  it()
 
 end

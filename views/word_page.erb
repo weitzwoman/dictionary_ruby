@@ -2,8 +2,8 @@
 <br>
 <h4>Definition:</h4>
 <ul>
-<% @word.definitions.each do |definition| %>
-<li><%= @new_definition.definition() %></li>
+<% @word.definitions().each() do |definition| %>
+<li><%= definition.definition() %></li>
 <% end %>
 </ul>
 
