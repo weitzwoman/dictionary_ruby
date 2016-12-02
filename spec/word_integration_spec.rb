@@ -30,13 +30,13 @@ describe('takes user to target route', {:type => :feature}) do
     click_link("View Word List")
     expect(page).to have_content("hike")
     click_link("hike")
-    expect(page).to have_content("Word definitions for hike")
+    expect(page).to have_content("Word Definitions for hike")
   end
   it('clicks add new definition button to view definition entry form') do
     click_button("Submit New Word")
     click_link("View Word List")
     click_link("")
-    click_link("Add a definition")
+    click_link("Add Definition")
     expect(page).to have_content("New Definition")
   end
   it('clicks add definition button to view definition entry form') do
@@ -44,7 +44,7 @@ describe('takes user to target route', {:type => :feature}) do
     click_button("Submit New Word")
     click_link("View Word List")
     click_link("lake")
-    click_link("Add a definition")
+    click_link("Add Definition")
     click_button("Submit New Definition")
     expect(page).to have_content("")
   end

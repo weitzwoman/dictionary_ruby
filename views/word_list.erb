@@ -1,9 +1,14 @@
-<h2>Word List</h2>
-
-<ul>
-<% @words.each do |word| %>
-  <li><a href="word_list/<%= word.id()%>"> <%= word.word() %></a></li>
-<% end %>
-<ul>
-
-<a href="/word_form">Add new Word</a>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">Word List</h2>
+  </div>
+  <div class="panel-body">
+    <ul>
+    <% @words.each do |word| %>
+      <li><a href="word_list/<%= word.id()%>"> <%= word.word() %></a></li>
+    <% end %>
+    <ul>
+  </div>
+</div>
+<br>
+<h4><a href="/word_form">Add new Word</a></h4>

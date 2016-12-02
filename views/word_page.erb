@@ -1,13 +1,14 @@
-<h3>Word definitions for <%= @word.word() %> </h3>
-<br>
-<h4>Definition:</h4>
-<ul>
-<% @word.definitions().each() do |definition| %>
-<li><%= definition.definition() %></li>
-<% end %>
-</ul>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Word Definitions for <%= @word.word() %> </h3>
+  </div>
+  <div class="panel-body">
+    <ol>
+    <% @word.definitions().each() do |definition| %>
+    <li><%= definition.definition() %></li>
+    <% end %>
+    </ol>
+  </div>
+</div>
 
-<br>
-<a href="/word_list/<%= @word.id() %>/definition_form">Add a definition</a>
-<br>
-<a href="/word_list">Return to Word List</a>
+<h4><a href="/word_list/<%= @word.id() %>/definition_form">Add Definition</a> | <a href="/word_list">Return to Word List</a></h4>
