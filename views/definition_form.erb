@@ -1,7 +1,7 @@
 <h2>New Definition</h2>
-
-<form action="new_definition" method="post">
+<form action="/new_definition" method="post">
   <div class="form-group">
+    <input id="definition_id" name="definition_id" type="hidden" value="<%= @word.id() %>">
     <label for="definition">Definition</label>
     <input type="text" name="definition" id="definition" class="form-control">
   </div>
