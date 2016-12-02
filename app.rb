@@ -5,6 +5,7 @@ require('./lib/word')
 require('./lib/definition')
 require('pry')
 
+
 get('/') do
   erb(:index)
 end
